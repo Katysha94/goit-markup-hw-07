@@ -143,6 +143,12 @@ align-items: center;
     background-color: #FFFFFF;
 }
 
+.mobile-menu-container {
+    position: relative;
+    padding-top: 80px;
+    padding-left: 40px;
+}
+
 .mobile-menu-close-btn {
     position: absolute;
     top: 24px;
@@ -160,6 +166,85 @@ align-items: center;
     transition: background-color var(--transition-duration-and-func), bordervar(--transition-duration-and-func);
 }
 
+.mobile-menu-list {
+    display: flex;
+    flex-direction:column;
+    gap: 40px;
+}
+
+.mobile-menu-link {
+    color: var(--primary-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    transition: color var(--transition-duration-and-func);
+}
+
+.mobile-menu-link:hover,
+.mobile-menu-link:focus {
+    color: var(--accent-color);
+}
+
+.mobile-menu-contact-container {
+    position: relative;
+    margin-top: 284px;
+    padding-left: 40px;
+}
+
+.mobile-menu-contact-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.mobile-menu-link-tel {
+    font-family: var(--main-font-family);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: var(--primary-text-color);
+}
+
+.mobile-menu-link-mail {
+    font-family: var(--main-font-family);
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+}
+
+.mobile-menu-social-container {
+    position: relative;
+    margin-top: 48px;
+    padding-left: 40px;
+    padding-bottom: 40px;
+}
+
+.mobile-menu-social-list {
+    display: flex;
+    justify-content: center;
+    gap: 56px;
+}
+
+.mobile-menu-social-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-accent-color);
+    border-radius: 50%;
+    transition: background-color var(--transition-duration-and-func);
+}
+
+.mobil-menu-social-icon {
+    fill: var(--logo-footer-second-color);
+}
 
 /* .page-header {
     background-color: #FFFFFF;
@@ -243,7 +328,6 @@ align-items: center;
     gap: 40px;
     padding-top: 24px;
     padding-bottom: 24px;
-    gap: 40px
 
 }
 
