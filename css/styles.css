@@ -648,6 +648,7 @@ img {
     .our-team-list {
         display: flex;
         flex-direction: column;
+        align-items: center;
         gap: 72px;
         
  }
@@ -655,7 +656,6 @@ img {
  .our-team-item {
      background-color: #FFFFFF;
      max-width: 264px;
-     height: 428px;
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
      border-radius: 0px 0px 4px 4px;
  }
@@ -763,6 +763,19 @@ img {
        color: #404BBF;
        border-color: #404bbf;
 
+   }
+
+   /* mobile footer */
+
+   .footer {
+       font-family: var(--secondary-font-family);
+       background-color: var(--primary-text-color);
+       padding: 96px 0;
+   }
+
+   .footer-container {
+       display: flex;
+       align-items: baseline;
    }
 
 
@@ -917,6 +930,9 @@ img {
 
     .customers-list {
         column-gap: 24px;
+        max-width: 552px;
+        margin-right: auto;
+        margin-left: auto;
     } 
 
     .customers-item {
@@ -1077,6 +1093,7 @@ img {
     .customers-list {
         flex-direction: row;
         flex-wrap: nowrap;
+        max-width: 100%;
         gap: 24px;
     }
 
