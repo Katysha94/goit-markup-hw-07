@@ -649,13 +649,12 @@ img {
         display: flex;
         flex-direction: column;
         gap: 72px;
-        margin-right: 82px;
-        margin-left: 82px;
+        
  }
 
  .our-team-item {
      background-color: #FFFFFF;
-     width: 264px;
+     max-width: 264px;
      height: 428px;
      box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
      border-radius: 0px 0px 4px 4px;
@@ -846,10 +845,10 @@ img {
  .our-team-list {
      flex-direction: row;
      flex-wrap: wrap;
+    justify-content: center;
      column-gap: 24px;
      row-gap: 64px;
-     margin-right: 108px;
-     margin-left: 108px;
+
  }
 
  .our-team-item {
@@ -989,14 +988,13 @@ img {
  .our-team-list {
     flex-wrap: nowrap;
     gap: 24px;
-    margin-right: auto;
-    margin-left: auto;
+    
  }
 
-/* .our-team-item {
+.our-team-item {
     flex-basis: calc((100% - 72px) / 4);
    
-} */
+}
 
 }
 
