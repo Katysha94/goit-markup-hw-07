@@ -267,7 +267,7 @@ img {
 .mobil-menu-social-icon {
     fill: var(--logo-footer-second-color);
 }
-
+ 
 }
 
 /* hero */
@@ -336,7 +336,7 @@ img {
     @media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
     .hero {
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/mobile/mobile@2x.jpg);
-          }  
+          }    
     }
 
  /*backdrop*/
@@ -358,12 +358,25 @@ img {
     transform: translate(-50%, -50%);
     padding: 72px 16px 16px 16px;
     width: 392px;
-    min-height: 586px;
+    height: 586px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
     transition: transform var(--transition-duration-and-func);
 }
+
+@media screen and (max-width: 428px) {
+    .modal {
+        width: 95%;
+        max-width: 392px;
+        height: 95%;
+        max-height: 584px;
+        overflow: scroll;
+    }
+}
+    
+
+
 .modal-close-btn {
     position: absolute;
     top: 24px;
@@ -773,11 +786,6 @@ img {
     padding: 96px 0;
 }
 
-/* .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-} */
 
 .logo-container {
     display: flex;
@@ -864,12 +872,7 @@ img {
     letter-spacing: 0.02em;
     margin-bottom: 16px;
 }
-/* .footer-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+
 
 .footer-input-form {
     width: 100%;
@@ -963,7 +966,7 @@ img {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    padding: 24px 0;
+    padding: 31px 0;
     transition:  color var(--transition-duration-and-func);
     }
 
@@ -1099,6 +1102,7 @@ img {
 
 
     .footer-container {
+        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: baseline;
@@ -1120,6 +1124,7 @@ img {
     }
 
     .footer-form {
+        display: flex;
         flex-direction: row;
         align-items: baseline;
         column-gap: 24px;
@@ -1145,6 +1150,11 @@ img {
 /* header */
 
     @media screen and (min-width: 1158px) {
+
+    .menu-link {
+        padding: 26px 0;
+    }
+        
     .contact-menu {
         flex-direction: row;
         gap: 40px;
@@ -1164,6 +1174,7 @@ img {
         padding: 188px 0;
         background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero/hero-bg.jpg);
         max-width: 1440px;
+        height: 600px;
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: 1158px),
