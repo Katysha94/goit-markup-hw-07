@@ -945,7 +945,7 @@ img {
 /* <----------------Portfolio-----------------> */
 /* navigation */
 
-@media screen and (max-width: 428px) {
+@media screen and (max-width: 767px) {
 
     .navigation {
     padding: 48px 0 48px;
